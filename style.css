@@ -30,7 +30,7 @@ font-family: 'Poiret One', cursive;
 
 #header{
   height: 27vh;  
-  padding-top: 8vh;
+  padding-top: 3vh;
   background-color: #f1c5a3;
   z-index: -11;
   margin-right: auto;
@@ -174,13 +174,14 @@ body {
 
 #button-1 {
   background-color: #35455d; 
-  margin-top: -5vh;
+  margin-top: -7vh;
   margin-left: 35vw;
+  height: 7vh;
   color: #FFFFFF;
   text-align: center;
   font-size: 1.3em;
   padding: 5px;
-  top: 40;
+  top: 45;
   position: absolute;
   width: 30vw;
   transition: all 0.5s;
@@ -190,6 +191,7 @@ body {
 
 #button-2 {
   background-color: #35455d; 
+  height: 7vh;
   margin-top: 0;
   margin-left: 27vw;
   border: none;
@@ -197,7 +199,7 @@ body {
   text-align: center;
   font-size: 1.3em;
   padding: 5px;
-  top: 40;
+  top: 45;
   position: absolute;
   width: 30vw;
   transition: all 0.5s;
@@ -366,18 +368,43 @@ body {
   border-spacing: 0 2em; 
 }
 
-#events-table #row1 {
+#events-table .gray {
   width: 100vw;
   background-color: #D3D3D3;
 }
 
-#events-table #col1{
+#events-table .col1{
   width: 35vw;
   text-align: left;
   padding: 20px;
 }
-#events-table #col2{
+#events-table .col2{
   width: 35vw;
   text-align: right;
   padding: 20px;
+}
+
+#events-table .colimg{
+  width: 35vw;
+  text-align: center;
+  padding: 20px;
+}
+
+#events-table td + td {
+  border-left: 4px solid white;
+}
+
+.text-back {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.514);
+}
+
+
+.joke-box{
+  height: 6vw;
+  background-color: #D3D3D3;
+  border-color:#fff;
+  border-width: thin;
+  font-size: 1.2em;
+  padding: 1vw 5vw 2vw 5vw;
 }
