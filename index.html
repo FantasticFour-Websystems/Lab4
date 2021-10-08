@@ -6,58 +6,71 @@
     <meta name="viewport" content="width=device-width">
     <title>TEAM SET - GNH WEBPAGE</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="flickity.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>  
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">  
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </head>
+    </head>
   <body>
    
     <!-- NAVBAR/HEADER -->
-    <div class = "header">
-      <h1>GNH WEBPAGE</h1>
+    <div id = "header">
+      <h1 id = "title">GAMMA NEU ETA</h1>
+      <h3 id ="sub-title">ITWS Honors Society</h3>
+      <div class="container">
+      <a href="#" class="slide-button">Hover me</a>
+      </div>
     </div>
-    <div class="navbar">
+
+    <div id="mySidenav" class="sidenav">
       <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
       <a href="contact.html">Contact Us</a>
     </div>
+
+    
     <!-- HEADER-->
     <div class = "main-body">
 
-    <div id = "gnhinfo">
-      Gamma Nu Eta (ΓΝΗ or GNH) is the National Honor Society for Information Techonology. It was organized to recognize and promote excellence in the study and the leadership of Information Technology, to offer knowledge and services to its members’ schools and surrounding communities; and to play an active role in the application and evolution of Information Technology within society. The organization provides academic services and runs career related events as a part of its mission to achieve these goals
-    </div>
+      <p>
+        Gamma Nu Eta is the National Information Technology Honor Society, and was founded to recognize and promote excellence in the study and the leadership of Information Technology, to offer knowledge and services to members' schools and the surrounding communities, and to play an active role in the application and evolution of Information Technology within society.
+        <br>
+        The organization is intended to not only bestow honor upon its members, but also to foster scholarship, leadership, and community involvement among those members.
+        <br>
+        Student members must be strong academically, demonstrate leadership, campus involvement, and excellent character.
+      </p>
       <!-- TABLE WITH FEATURES FOR GNH  -->
-      <table class = "table-features">
-        <tr>
-          <td>
-            <div class="tooltip-wrap">
-              <img src="temp.png" alt="Some Image" />
-              <div class="tooltip-content">
-                <p>ITWS Honors Society</p>
-              </div> 
-            </div>
-          </td>
-          <td>
-            <div class="tooltip-wrap">
-              <img src="temp.png" alt="Some Image" />
-              <div class="tooltip-content">
-                <p>Tutoring</p>
-              </div> 
-            </div>
-          </td>
-          <td>
-            <div class="tooltip-wrap">
-              <img src="temp.png" alt="Some Image" />
-              <div class="tooltip-content">
-                <p>Company Expose</p>
-              </div> 
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
+      <h2> Services Offered </h2>
+  
+
     
+
+  <div class="carousel"
+  data-flickity='{ "freeScroll": true }'>
+  <div class="carousel-cell">
+      <img src="temp.png" alt="Some Image" />
+      <p>ITWS Honors Society</p>
+  </div>
+  <div class="carousel-cell">
+    <img src="temp.png" alt="Some Image" />
+      <p>Tutoring</p 
+    </div>
+
+  </div>
+  <div class="carousel-cell">
+    <img src="temp.png" alt="Some Image" />
+      <p>Company Expose</p
+    </div>
+  </div>
+</div>
+
+      <h2> Our Events </h2>
+      <p>Note: this calendar is a template only.</p>
+      <iframe src="https://calendar.google.com/calendar/embed?src=ia14fj0nfs3gsfigge1cgsnbho%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+        
 <section class="sec-footer">
     <div class="container">
         <div class="row">
