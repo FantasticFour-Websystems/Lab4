@@ -44,23 +44,16 @@ function validate(formObj) {
    }
 }
 /*ITWS NEWS API */
+var it_jokes = ["There are 10 types of people in the world: those who understand binary, and those who don't.", "How many programmers does it take to change a light bulb?<br>None. It's a hardware problem.", "A SEO couple had twins. For the first time they were happy with duplicate content.", "Why is it that programmers always confuse Halloween with Christmas?<br>Because 31 OCT = 25 DEC", "Why do they call it hyper text?<br>Too much JAVA.", "Why was the JavaScript developer sad?<br>Because he didn't Node how to Express himself", "In order to understand recursion you must first understand recursion.", "Why do Java developers wear glasses? Because they can't C#", "What do you call 8 hobbits?<br>A hobbyte", "Why did the developer go broke?<br>Because he used up all his cache"];
 
-/*
-var axios = require("axios").default;
-
-var options = {
-  method: 'GET',
-  url: 'https://community-hacker-news-v1.p.rapidapi.com/updates.json',
-  params: {print: 'pretty'},
-  headers: {
-    'x-rapidapi-host': 'community-hacker-news-v1.p.rapidapi.com',
-    'x-rapidapi-key': '2a9a5d9576mshd841cf956812c0cp15336bjsnf717aea52939'
+change_text(0);
+function change_text(i){
+  if (it_jokes.length > i) {
+    setTimeout(function() {
+      document.getElementById("joke").innerHTML = it_jokes[i];
+      change_text(++i);
+    }, 4000); // 5 seconds (in milliseconds)
+  } else if (it_jokes.length == i) { // Loop
+    change_text(0);
   }
-};
-
-axios.request(options).then(function (response) {
-console.log(response.data);
-}).catch(function (error) {
-console.error(error);
-});
-*/
+}
